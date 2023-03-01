@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>API users</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>API USers</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;800&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- bootstrap styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      img {
+        margin: 2rem 0;
+      }
+      .codeview {
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 100%;
+        color: #666;
+        font-family: Courier, Open Sans, sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+        overflow: scroll;
+      }
+    </style>
   </head>
   <body>
-    <h1>this is a user api</h1>
+    <nav class="navbar bg-body-tertiary">
+      <div
+        class="container w-75 flex-column flex-lg-row justify-content-lg-around"
+      >
+        <a class="navbar-brand" id="home" href="#home">
+          <i class="bi bi-house-door-fill"></i>
+          Inicio
+        </a>
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-book-half"></i>
+          Documentacion
+        </a>
+        <a
+          class="navbar-brand"
+          target="_blank"
+          href="https://github.com/Lrapa99/nestjs-mysql"
+        >
+          <i class="bi bi-github"></i>
+          GitHub
+        </a>
+      </div>
+    </nav>
+    <div class="container w-75 vh-100">
+      <article class="m-5">
+        <h1 class="text-center fw-bold">
+          API REST
+          <a
+            class="text-decoration-none"
+            href="https://github.com/Lrapa99/nestjs-mysql"
+            target="_blank"
+            >Open-Source</a
+          >
+          para crear usuarios, publicaciones y perfiles fácilmente.
+        </h1>
+
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner w-50 mx-auto">
+            <div class="carousel-item active">
+              <img
+                src="img/usersFlow.png"
+                class="img-fluid d-block w-100"
+                alt="usersFlow"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/profileData.png"
+                class="img-fluid d-block w-100"
+                alt="profileData"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/addPost.png"
+                class="img-fluid d-block w-100"
+                alt="addPost"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <p class="text-center">
+          ¡Crea usuarios, publicaciones y perfiles en segundos con nuestra API
+          REST fácil de usar! Personaliza perfiles y automatiza la creación de
+          contenido de calidad. Además, nuestra API REST es ideal para realizar
+          pruebas en entornos de desarrollo, lo que te permitirá ahorrar tiempo
+          y esfuerzo en la creación y gestión de usuarios y contenido de prueba.
+          Lo mejor de todo, es que nuestra API es
+          <a
+            class="text-decoration-none"
+            href="https://github.com/Lrapa99/nestjs-mysql"
+            target="_blank"
+            >Open-Source</a
+          >. ¡Ahorra tiempo y aumenta la eficiencia en tus proyectos de
+          desarrollo con nuestra API REST! Prueba nuestra API hoy mismo.
+        </p>
+      </article>
+      <article>
+        <h2>Documentacion</h2>
+        <div class="codeview">
+          <p>
+            fetch('https://randomuser.me/api/') .then(response =>
+            response.json()) .then(data => console.log(data));
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <!-- bootstrap scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
